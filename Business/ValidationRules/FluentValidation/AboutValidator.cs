@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entities.Concrete;
 using FluentValidation;
-using EntityLayer.Concrete;
 
-namespace BusinessLayer.ValidationRules.FluentValidation
+namespace Business.ValidationRules.FluentValidation
 {
     class AboutValidator:AbstractValidator<About>
     {

@@ -1,4 +1,4 @@
-﻿
+﻿using System.Collections.Generic;
 namespace Core.Utilities.Results
 {
     public class SuccessDataResult<T> : DataResult<T>

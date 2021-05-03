@@ -3,22 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{5BA38E2B-4862-41DA-9A67-05043816415E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{5BA38E2B-4862-41DA-9A67-05043816415E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E6E1E2F5-C364-44FD-808F-F535258EC967} = {E6E1E2F5-C364-44FD-808F-F535258EC967}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{E6E1E2F5-C364-44FD-808F-F535258EC967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{66FA436C-0392-421B-95B2-ED3E133D7752}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{66FA436C-0392-421B-95B2-ED3E133D7752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{86452AB4-BCC5-4989-AA3F-6FBF379431EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{86452AB4-BCC5-4989-AA3F-6FBF379431EC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5BA38E2B-4862-41DA-9A67-05043816415E} = {5BA38E2B-4862-41DA-9A67-05043816415E}
 		{66FA436C-0392-421B-95B2-ED3E133D7752} = {66FA436C-0392-421B-95B2-ED3E133D7752}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{518EB3D8-DDC1-4824-92F1-4DC949C68422}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{518EB3D8-DDC1-4824-92F1-4DC949C68422}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5BA38E2B-4862-41DA-9A67-05043816415E} = {5BA38E2B-4862-41DA-9A67-05043816415E}
+		{66FA436C-0392-421B-95B2-ED3E133D7752} = {66FA436C-0392-421B-95B2-ED3E133D7752}
+		{86452AB4-BCC5-4989-AA3F-6FBF379431EC} = {86452AB4-BCC5-4989-AA3F-6FBF379431EC}
+		{E6E1E2F5-C364-44FD-808F-F535258EC967} = {E6E1E2F5-C364-44FD-808F-F535258EC967}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

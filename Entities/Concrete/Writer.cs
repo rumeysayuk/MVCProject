@@ -12,7 +12,6 @@ namespace Entities.Concrete
         public string WriterMail { get; set; }
         public string WriterPassword { get; set; }
         //Yazar-başlık ilişkisi 
-        public ICollection<Heading> Headings { get; set; }
-        public ICollection<Content> Contents { get; set; }
+
     }
 }

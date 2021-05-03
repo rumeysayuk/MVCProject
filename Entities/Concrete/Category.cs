@@ -13,6 +13,6 @@ namespace Entities.Concrete
         public bool CategoryStatus { get; set; }
 
         //İlişkiyi oluşturdum.
-        public  ICollection<Heading> Headings { get; set; }
+      
     }
 }

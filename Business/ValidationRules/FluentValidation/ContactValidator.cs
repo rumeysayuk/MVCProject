@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EntityLayer.Concrete;
+﻿using Entities.Concrete;
 using FluentValidation;
 
-namespace BusinessLayer.ValidationRules.FluentValidation
+namespace Business.ValidationRules.FluentValidation
 {
    public class ContactValidator:AbstractValidator<Contact>
     {

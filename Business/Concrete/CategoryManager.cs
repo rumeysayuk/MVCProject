@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Business.Abstract;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
@@ -18,14 +19,14 @@ namespace Business.Concrete
         {
             _categoryDal = categoryDal;
         }
-        public List<Category> GetAll()
+        public IDataResult< List<Category>> GetAll()
         {
-            return new List<Category>(_categoryDal.GetAll());
+            return new SuccessDataResult<List<Category>> (_categoryDal.GetAll());
         }
 
-        public List<Category> GetById(int categoryId)
+        public IDataResult<List<Category>> GetById(int categoryId)
         {
-            return new List<Category>(_categoryDal.GetAll(c => c.Id == categoryId));
+            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c => c.Id == categoryId));
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Entities.Concrete
         public int WriterId { get; set; }
         public virtual Writer Writer{ get; set; }
         //İlişki kuracağı yeri söyledim.
-        public ICollection<Content> Contents { get; set; }
+
 
     }
 }
