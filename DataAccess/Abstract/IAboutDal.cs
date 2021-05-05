@@ -1,6 +1,9 @@
-﻿namespace DataAccess.Abstract
+﻿using Core.DataAccess;
+using Entities.Concrete;
+
+namespace DataAccess.Abstract
 {
-   partial interface IAboutDal
+   public interface IAboutDal:IEntityRepository<About>
     {
     }
 }
