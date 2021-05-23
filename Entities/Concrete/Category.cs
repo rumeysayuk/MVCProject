@@ -11,6 +11,7 @@ namespace Entities.Concrete
       
         public string CategoryDescription { get; set; }
         public bool CategoryStatus { get; set; }
+        //public string CategoryHeading { get; set; }
 
         //İlişkiyi oluşturdum.
       

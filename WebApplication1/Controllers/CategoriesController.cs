@@ -51,7 +51,7 @@ namespace WebApplication1.Controllers
             var result = _categoryService.Delete(category);
             if (result.Success)
             {
-                return View(result);
+                return View(result.Message);
             }
             return BadRequest(result.Message);
         }

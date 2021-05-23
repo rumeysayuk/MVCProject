@@ -1,0 +1,11 @@
+﻿@using Entities.Concrete
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<form class="form-group" method="post">
+    <input type="text" class="form-control" name="CategoryName" placeholder="Kategori adi" />
+    <br/>
+    <input type="text" class="form-control" name="CategoryDescription" placeholder="Kategori tanımı" />
+    <button class="btn btn-outline-success">Ekle</button>
+</form>

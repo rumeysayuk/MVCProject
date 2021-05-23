@@ -1,0 +1,14 @@
+﻿@using Entities.Concrete
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Kategori güncelleme Sayfası </h1>
+<form class="form-group" method="post">
+    <input type="text" class="form-control" name="CategoryName" placeholder="Kategori adi" />
+    <br />
+    <input type="text" class="form-control" name="CategoryDescription" placeholder="Kategori tanımı" />
+    <button class="btn btn-outline-success">Güncelle</button>
+</form>
+

@@ -47,6 +47,7 @@ namespace Business.Concrete
 
         public IResult Delete(Category category)
         {
+            _categoryDal.Delete(category);
             return new SuccessResult(Messages.CategoryDeleted);
         }
     }
