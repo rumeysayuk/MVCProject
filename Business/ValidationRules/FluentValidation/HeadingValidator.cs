@@ -7,7 +7,7 @@ namespace Business.ValidationRules.FluentValidation
     {
         public HeadingValidator()
         {
-            RuleFor(h => h.HeadingName).NotNull().MaximumLength(50);
+            RuleFor(h => h.Name).NotNull().MaximumLength(50);
 
         }
     }

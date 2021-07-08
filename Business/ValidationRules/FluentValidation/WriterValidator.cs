@@ -7,11 +7,11 @@ namespace Business.ValidationRules.FluentValidation
     {
         public WriterValidator()
         {
-            RuleFor(w => w.WriterName).NotNull().Length(3, 50);
-            RuleFor(w => w.WriterSurname).NotNull().Length(3, 50);
-            RuleFor(w => w.WriterImage).MaximumLength(100);
-            RuleFor(w => w.WriterMail).NotNull().EmailAddress();
-            RuleFor(w => w.WriterPassword).NotNull().Length(6, 50);
+            RuleFor(w => w.Firstname).NotNull().Length(3, 50);
+            RuleFor(w => w.Lastname).NotNull().Length(3, 50);
+            RuleFor(w => w.Image).MaximumLength(100);
+            RuleFor(w => w.EMail).NotNull().EmailAddress();
+            RuleFor(w => w.Password).NotNull().Length(6, 50);
 
         }
     }

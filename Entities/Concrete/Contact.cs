@@ -1,4 +1,5 @@
-﻿using Core.Entities;
+﻿using System;
+using Core.Entities;
 
 namespace Entities.Concrete
 {
@@ -8,6 +9,7 @@ namespace Entities.Concrete
         public string Username { get; set; }
         public string UserMail { get; set; }
         public string Subject { get; set; }
+        public DateTime ContactDate { get; set; }
         public string Message { get; set; }
     }
 }

@@ -6,12 +6,10 @@ namespace Entities.Concrete
   public  class Writer:IEntity
     {
         public int Id { get; set; }
-        public string WriterName { get; set; }
-        public string WriterSurname { get; set; }
-        public string WriterImage { get; set; }
-        public string WriterMail { get; set; }
-        public string WriterPassword { get; set; }
-        //Yazar-başlık ilişkisi 
-
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public string Image { get; set; }
+        public string EMail { get; set; }
+        public string Password { get; set; }
     }
 }

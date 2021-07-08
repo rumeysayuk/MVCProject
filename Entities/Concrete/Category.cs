@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using Core.Entities;
 
 namespace Entities.Concrete
@@ -7,13 +9,10 @@ namespace Entities.Concrete
     {
        
         public int Id { get; set; }
-        public string CategoryName { get; set; }
+        public string Name { get; set; }
       
-        public string CategoryDescription { get; set; }
-        public bool CategoryStatus { get; set; }
-        //public string CategoryHeading { get; set; }
+        public string Description { get; set; }
+        public bool Status { get; set; }
 
-        //İlişkiyi oluşturdum.
-      
     }
 }

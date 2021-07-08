@@ -8,16 +8,11 @@ namespace Entities.Concrete
     {
 
         public int Id { get; set; }
-        public string HeadingName { get; set; }
-        public DateTime HeadingDate { get; set; }
-
-        //İlişkinin neyle kurulduğunu söyledim.
+        public string Name { get; set; }
+        public DateTime gDate { get; set; }
+                                                                                                                            
         public int CategoryId { get; set; }
-        public virtual Category Category { get; set; }
-        //Yazar-başlık ilşkisi
         public int WriterId { get; set; }
-        public virtual Writer Writer{ get; set; }
-        //İlişki kuracağı yeri söyledim.
 
 
     }
